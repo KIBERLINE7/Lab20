@@ -370,6 +370,44 @@ void zd5() {
 int main()
 {
 
-    zd5();
+    int t;
+
+    while (true) {
+
+        cout << "Enter number variants or 0 for excit : ";
+        cin >> t;
+
+        switch (t)
+        {
+        case 1: {
+            zd1();
+            break;
+        }
+        case 2: {
+            zd2();
+            break;
+        }
+        case 3: {
+            zd3();
+            break;
+        }
+        case 4: {
+            zd4();
+            break;
+        }
+        case 5: {
+            zd5();
+            break;
+        }
+        case 0: {
+            return 0;
+        }
+        default:
+            break;
+        }
+
+    }
+
+    return 0;
 
 }
